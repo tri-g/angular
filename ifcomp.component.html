@@ -1,0 +1,6 @@
+<h1 [ngStyle]="{color:getcolor()}">watever</h1>
+<p *ngIf="flag; else elseblock">Flag is true</p>
+<ng-template #elseblock>
+	<p>Flag is false</p>
+</ng-template>
+<button (click)="toggleflag()">toggle</button>
